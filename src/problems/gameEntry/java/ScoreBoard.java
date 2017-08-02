@@ -10,6 +10,9 @@
         board = new GameEntry[capacity];
     }
 
+    /**
+     * Add an entry to the ScoreBoard
+     */
     public boolean add(GameEntry entry) {
         boolean flag = false;
         int newScore = entry.getScore();
@@ -39,12 +42,29 @@
         return flag;
      }
 
+     /**
+      * Remove an entry from the ScoreBoard
+      */
+     public GameEntry remove(int index) {
+        GameEntry entry = null;
+        if (index >= 0 && index < board.length) {
+            entry = board[index];
+            for (int i = index; i < board.length - 1; i++) {
+                board[i] = board[i + 1];
+            }
+            board[board.length - 1] = null;
+        }
+
+        return entry;
+     }
+
      public String toString() {
          for(GameEntry entry : board) {
              if (entry != null) {
                  System.out.println(entry.getName() + ": " + entry.getScore());
              }
          }
+         System.out.println("Size is " + board.length);
          return "";
      }
  }
