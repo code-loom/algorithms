@@ -6,6 +6,7 @@ public class ScoreBoardTest {
         scoreBoard.add(new GameEntry("Hockey", 97));
         System.out.println(scoreBoard.toString());
         scoreBoard.add(new GameEntry("Hockey", 99));
+        scoreBoard.add(new GameEntry("Hockey", 91));
         System.out.println(scoreBoard.toString());
     }
 }

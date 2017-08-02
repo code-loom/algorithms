@@ -28,6 +28,13 @@
                 j--;
             }
             board[j] = entry;
+            flag = true;
+        }
+
+        if (flag) {
+            System.out.println("Game Entry with score " + entry.getScore() + " added.");
+        } else {
+            System.out.println("Game Entry with score " + entry.getScore() + " NOT added.");
         }
         return flag;
      }
