@@ -4,6 +4,8 @@
   "description": "Algorithms implementation",
   "main": "index.js",
   "scripts": {
+    "build": "javac src/algorithms/insertionSort/InsertionSort.java",
+    "execute": "java src/algorithms/insertionSort/InsertionSort.class",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,10 +17,5 @@
   "bugs": {
     "url": "https://github.com/code-loom/algorithms/issues"
   },
-  "homepage": "https://github.com/code-loom/algorithms",
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-burger-menu": "^2.1.1",
-    "react-dom": "^15.6.1"
-  }
+  "homepage": "https://github.com/code-loom/algorithms"
 }
