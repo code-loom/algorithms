@@ -1,3 +1,5 @@
+package problems.gameEntry;
+
 public class ScoreBoardTest {
     public static void main(String[] args) {
         ScoreBoard scoreBoard = new ScoreBoard(4);

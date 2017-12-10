@@ -1,3 +1,5 @@
+package problems.gameEntry;
+
 /**
  * A scoreboard is limited to a certain number of high scores that can be saved; once that limit is reached, a new score only qualifies for the scoreboard if it is strictly higher than the lowest “high score” on the board.
  */
