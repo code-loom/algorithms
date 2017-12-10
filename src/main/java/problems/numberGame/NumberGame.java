@@ -10,11 +10,15 @@ public class NumberGame {
         this.number = (int)(Math.random() * 100);
     }
 
-    public boolean canIPlay() {
-        return this.MAX_CHANCES > 0;
+    private boolean canIPlay() {
+        boolean flag = this.MAX_CHANCES > 0;
+        if (!flag) {
+            System.out.println("Sorry you lost. The number was " + this.number + "!!!");
+        }
+        return flag;
     }
 
-    public int chancesLeft() {
+    private int chancesLeft() {
         return this.MAX_CHANCES;
     }
 
@@ -34,7 +38,7 @@ public class NumberGame {
         }
     }
 
-    public void play() {
+    private void play() {
         System.out.println("I have a random number between 1 and 100. You get " + this.MAX_CHANCES + " chances to guess it right");
         Scanner scanner = new Scanner(System.in);
         int number;
